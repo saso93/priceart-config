@@ -1,0 +1,28 @@
+#Application Config
+application:
+ listino: 1
+
+management:
+ info:
+  env:
+   enabled: true
+  git:
+   enabled: true
+   mode: full
+  endpoint:
+   health:
+    show-details: WHEN_AUTHORIZED
+  endpoints:
+   web:
+    exposure:
+     include: health,info,metrics
+
+
+# Actuator Info
+info:
+ assistenza:
+  nome: Salvatore Vestita
+  email: salvatore.vestita.1993@gmail.com
+ nome:
+  nome-app: PriceArtWeb Service - Auth Oauth2 keycloak
+ profilo: GitHub List 1
